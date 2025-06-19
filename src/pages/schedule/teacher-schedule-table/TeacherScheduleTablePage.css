@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.st-container {
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.st-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.st-nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.st-nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 6px 16px;
+    font-size: 16px;
+    background: #333;
+    border: 1px solid #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.st-period {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 6px 16px;
+    margin: 0 12px;
+    background: #333;
+    border: 1px solid #555;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.st-table {
+    width: 85vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #222;
+    font-size: 14px;
+}
+
+.st-th,
+.st-td {
+    border: 1px solid #555;
+    padding: 6px;
+    color: #fff;
+    max-width: 120px;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+}
+
+.st-time {
+    font-size: 0.75rem;
+    margin-top: 2px;
+    color: #ccc;
+}
+
+.st-eventName {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 4px 0;
+}
+
+.st-plus {
+    font-size: 20px;
+    color: #777;
+}
+
+.st-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 16px;
+    width: 85vw;
+    max-width: 1100px;
+}
+
+.st-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.st-legend-color {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #888;
+}
+
+.st-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.st-modal {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 90vw;
+    max-height: 80vh;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.st-modal-header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.st-modal-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.st-modal-header p {
+    margin: 4px 0;
+    color: #ccc;
+}
+
+.st-modal-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.st-modal-subtitle {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.st-select,
+.st-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #444;
+    border: 1px solid #555;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.st-checkbox-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.st-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.st-btn-full {
+    width: 100%;
+    padding: 8px 16px;
+    margin: 10px 0 0;
+    background: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.st-section-title {
+    margin-top: 12px;
+    color: #fff;
+}
+
+.st-eq-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.st-select-small {
+    flex: 1;
+    padding: 8px;
+    background: #444;
+    border: 1px solid #555;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.st-select-medium {
+    flex: 3;
+    padding: 8px;
+    background: #444;
+    border: 1px solid #555;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.st-btn-small,
+.st-btn-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 8px;
+    background: #a00;
+    color: #fff;
+    border: none;
+    box-sizing: border-box;
+}
+
+.st-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    width: 100%;
+}

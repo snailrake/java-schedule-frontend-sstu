@@ -1,0 +1,88 @@
+.st-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.st-modal {
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    width: 500px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.st-modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.st-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #444;
+    border: 1px solid #555;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.st-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.st-list li {
+    margin-bottom: 8px;
+}
+
+.st-checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.st-checkbox-row input {
+    width: auto;
+    margin: 0;
+}
+
+.st-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.st-btn {
+    padding: 8px 16px;
+    background: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+}

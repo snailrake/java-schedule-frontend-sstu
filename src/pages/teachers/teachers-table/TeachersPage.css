@@ -1,0 +1,281 @@
+.teachers-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+.teachers-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.teachers-header h1 {
+    flex-grow: 1;
+    font-size: 24px;
+    margin: 0;
+}
+
+.teachers-header input {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: white;
+    border-radius: 4px;
+}
+
+.teachers-header button {
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #4f46e5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.teachers-table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.teachers-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    min-width: 900px;
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+}
+
+.teachers-table th,
+.teachers-table td {
+    padding: 12px 16px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.teachers-table thead tr {
+    background-color: #2a2a2a;
+}
+
+.teachers-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teachers-modal {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90vw;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow: auto;
+    position: relative;
+}
+
+.teachers-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.teachers-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.teachers-modal label {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.teachers-modal input[type="text"],
+.teachers-modal input[type="number"] {
+    padding: 6px;
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 4px;
+}
+
+.teachers-subjects {
+    margin: 10px 0;
+}
+
+.teachers-subjects h2 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.teachers-subjects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 5px;
+}
+
+.teachers-subjects button {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.teachers-modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.teachers-delete-btn {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #4f46e5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button:disabled {
+    background-color: #555;
+    cursor: default;
+}
+
+.pagination span {
+    font-size: 14px;
+}
+
+.st-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.st-modal {
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    width: 500px;
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.st-modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.st-modal-header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.st-modal-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.st-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #444;
+    border: 1px solid #555;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.st-section-title {
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.st-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.st-checkbox-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.st-checkbox-row input {
+    margin-right: 6px;
+}
+
+.st-btn {
+    padding: 8px 16px;
+    background: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.st-btn-delete {
+    background: #e53935;
+}
+
+.st-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 16px;
+}
