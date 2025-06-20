@@ -238,7 +238,7 @@ export default function ClassesScheduleTablePage() {
             return;
         }
 
-        if (!formData.eventTypeId || !formData.cabinetId || !formData.teacherId) {
+        if (!formData.eventTypeId) {
             alert('Заполните все обязательные поля');
             return;
         }
@@ -313,7 +313,7 @@ export default function ClassesScheduleTablePage() {
                                 {cell ? (
                                     <>
                                         <div>{cell.cabinetNumber}</div>
-                                        <div className="st-eventName">{cell.subjectName}</div>
+                                        <div className="st-eventName">{cell.subjectName || cell.eventTypeName}</div>
                                         <div>{cell.teacherFullName}</div>
                                     </>
                                 ) : canEdit ? (
@@ -401,7 +401,7 @@ export default function ClassesScheduleTablePage() {
                             {modalData.eventId && <button className="st-btn st-btn-delete" onClick={handleDelete}>Удалить</button>}
                             <div style={{ flex: 1 }} />
                             <button className="st-btn" onClick={() => setShowModal(false)}>Отмена</button>
-                            <button className="st-btn" onClick={handleSubmit} disabled={!formData.eventTypeId || !formData.teacherId || !formData.cabinetId}>
+                            <button className="st-btn" onClick={handleSubmit} disabled={!formData.eventTypeId}>
                                 Сохранить
                             </button>
                         </div>

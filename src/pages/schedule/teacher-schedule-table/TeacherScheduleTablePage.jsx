@@ -336,7 +336,7 @@ export default function TeacherScheduleTablePage() {
                                 {cell ? (
                                     <>
                                         <div>{cell.cabinetNumber}</div>
-                                        <div className="st-eventName">{cell.subjectName}</div>
+                                        <div className="st-eventName">{cell.subjectName || cell.eventTypeName}</div>
                                         <div>
                                             {(() => {
                                                 const cls = classes.find(c => c.id === cell.classId);
